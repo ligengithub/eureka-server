@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eureka-server-2
+#  security:
+#    user:
+#      name: lg
+#      password: 123456
+
+server:
+  port: 1234
+eureka:
+  instance: peer2
+  client:
+    service-url:
+#      defaultZone: http://lg:123456@peer1:1233/eureka
+      defaultZone: http://localhost:1234/eureka
+
+    fetch-registry: false
+    register-with-eureka: false
